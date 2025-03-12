@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Полет птеродактиля</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="score">Счет: 0</div>
+    <div id="game-over" class="hidden">Игра окончена! <br> Нажмите пробел для перезапуска</div>
+  </div>
+
+  <!-- Подключаем Three.js как модуль через CDN -->
+  <script type="module">
+    import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r155/three.module.min.js';
+    window.THREE = THREE; // Делаем THREE доступным глобально для модулей
+    import './main.js'; // Импортируем основной файл
+  </script>
+</body>
+</html>
